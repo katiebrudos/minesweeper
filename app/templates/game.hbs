@@ -1,0 +1,27 @@
+<h2>Let's Play Minesweeper</h2>
+<button {{action 'reset'}}>Reset</button>
+<span># Bombs: {{bombs}}</span>
+<span>Game board = {{mapWidth}} x {{mapHeight}}</span>
+
+<div>
+<table>
+	<tbody>
+		{{#each map.rows as |row|}}
+		<tr>
+			{{#each row.cells as |cell|}}
+				<td>
+					{{#if youLoose}}
+						<button class="cell"> {{action 'cleared' cell}} </button>
+					{{else}}
+					<button class="cell" {{action 'cleared' cell}} >
+						{{cell.text}}
+					</button>
+					{{/if}}
+
+				</td>
+			{{/each}}
+		</tr>
+		{{/each}}
+	</tbody>
+</table>
+</div>
