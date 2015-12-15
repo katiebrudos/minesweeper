@@ -4,7 +4,16 @@
 	color: navy;
 	background-color: grey;
 	font-weight: bold;
-	border: black;
+	border: black solid 1px;
+	height: 40px;
+	width: 40px;
+}
+
+.cleared{
+	color: navy;
+	background-color: lightgrey;
+	font-weight: bold;
+	border: black solid 1px;
 	height: 40px;
 	width: 40px;
 }

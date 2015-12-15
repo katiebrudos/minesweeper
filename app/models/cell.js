@@ -6,10 +6,10 @@ export default Ember.Object.extend({
 	hasBomb: false,
 	cleared: false,
 	text: Ember.computed('cleared', 'count', function() {
-		if (this.get('cleared')) {
+		if (this.get('cleared') ) {
 			return this.get('count');
 		} else {
-			return "~";
+			return " ";
 		}
 	}),
 	neighbors: [],
